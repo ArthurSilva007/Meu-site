@@ -394,19 +394,19 @@ footer {
     }
     .nav-responsive {
         display: block;
-        font-size: 1.2rem;
+        font-size: var(--font-size-small);
         margin: 0.5rem 0;
     }
     section {
-        padding: 6rem 2.5rem;
+        padding: var(--spacing-large) var(--spacing-medium);
     }
     .Home, .About {
         flex-direction: column;
-        gap: 1.2rem;
+        gap: var(--spacing-small);
     }
     .Home-img, .About-img {
-        width: 80%;
-        max-width: 80%;
+        width: var(--img-width-default);
+        max-width: var(--img-width-default);
     }
     .Home-content, .About-content {
         width: 100%;
@@ -415,7 +415,7 @@ footer {
         text-align: center;
     }
     .Home-content h1, .About-content h1 {
-        font-size: 1.2rem;
+        font-size: var(--font-size-small);
         font-weight: 700;
         line-height: 1.3;
     }
@@ -424,76 +424,85 @@ footer {
     }
 }
 
-
-/* = Small (sm): Smartphone (landscape) */
+/* === Small (sm): Smartphone (landscape) === */
 @media (min-width: 576px) {
     .Home-img, .About-img {
-        width: 65%;
-        max-width: 65%;
+        width: var(--img-width-small);
+        max-width: var(--img-width-small);
     }
     .Services-box {
         width: 70%;
     }
 }
 
-/* == Medium (md): tablet */
+/* === Medium (md): Tablet === */
 @media (min-width: 768px) {
     .menu-hamburguer {
-            display: none;
-        }
-        .nav {
-            display: block;
-        }
-        .nav-responsive, .nav-responsive a {
-            display: none;
-        }
-        .Home, .About {
-            flex-direction: row;
-            justify-content: space-evenly;
-        }
-        .Home-img, .About-img {
-            max-width: 35%;
-        }
-        .Home-content, .About-content {
-            width: 50%;
-        }
-        .Services-box {
-            width: 60%;
-            margin-bottom: 2rem;
-        }
-        .Portfolio-container {
-            grid-template-columns: auto auto;
-        }
-        form .input-box input {
-            width: 49%
-        }
+        display: none;
     }
-/* === large (lg): Notebook */
-@media (min-width:992px) {
-      /*.Home-img, .About-img {
-            max-width: 35%;
-        }*/
-    
-        .Services-container {
-            flex-direction: row;
-            gap: 1.2rem;
-        }
+    .nav {
+        display: block;
     }
+    .nav-responsive, .nav-responsive a {
+        display: none;
+    }
+    .Home, .About {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .Home-img, .About-img {
+        max-width: var(--img-width-medium);
+    }
+    .Home-content, .About-content {
+        width: 50%;
+    }
+    .Services-box {
+        width: 60%;
+        margin-bottom: var(--spacing-small);
+    }
+    .Portfolio-container {
+        grid-template-columns: repeat(2, auto);
+    }
+    form .input-box input {
+        width: 49%;
+    }
+}
 
- /* ====large (lg: Dessktop */
- @media (min-width:1200px) {
-      .Home-img, .About-img {
-            max-width: 25%;
-        }
-        .Home-content h1 {
-            font-size: 2rem; 
-        }
-        .Home-content h3 {
-            font-size: 2.7rem; 
-        }
-        .Portfolio-container {
-            grid-template-columns: auto auto auto;
-        }
+/* === Large (lg): Notebook === */
+@media (min-width: 992px) {
+    .Services-container {
+        flex-direction: row;
+        gap: var(--spacing-small);
+    }
+}
 
- }
+/* === Extra Large (xl): Desktop === */
+@media (min-width: 1200px) {
+    .Home-img, .About-img {
+        max-width: var(--img-width-large);
+    }
+    .Home-content h1 {
+        font-size: var(--font-size-medium);
+    }
+    .Home-content h3 {
+        font-size: var(--font-size-large);
+    }
+    .Portfolio-container {
+        grid-template-columns: repeat(3, auto);
+    }
+}
 /* === Media Queries === */
+
+/* === Variáveis globais === */
+:root {
+    --spacing-small: 1.2rem;
+    --spacing-medium: 2.5rem;
+    --spacing-large: 6rem;
+    --img-width-default: 80%;
+    --img-width-small: 65%;
+    --img-width-medium: 35%;
+    --img-width-large: 25%;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 2rem;
+    --font-size-large: 2.7rem;
+}
