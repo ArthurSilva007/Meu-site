@@ -524,7 +524,7 @@ footer {
         text-align: center;
         font-size: 1.5rem;
     }
-    }
+}
     .nav {
         display: block;
     }
@@ -576,7 +576,7 @@ footer {
         grid-template-columns: repeat(3, auto); /* Três colunas em desktops */
     }
 }
-
+/* Para telas maiores que 768px (como PCs e tablets), o hambúrguer fica oculto */
 @media (min-width: 768px) {
     .menu-hamburguer {
         display: none; /* Esconde o hambúrguer em telas maiores */
