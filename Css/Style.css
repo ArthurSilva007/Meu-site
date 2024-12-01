@@ -497,8 +497,33 @@ footer {
 
 /* === Medium (md): Tablet === */
 @media (min-width: 768px) {
+    @media (max-width: 768px) {
     .menu-hamburguer {
-        display: none;
+        display: block; /* Garantir que o hambúrguer fique visível */
+    }
+    
+    .nav-responsive {
+        display: none; /* O menu começa oculto */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens do menu */
+        padding: 2rem 0;
+    }
+    
+    .nav-responsive.active {
+         display: flex; /* Exibe o menu quando a classe 'active' for adicionada */
+    }
+    
+        /* Adiciona uma transição suave para a exibição do menu */
+    .nav-responsive a {
+        margin: 1rem 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
     }
     .nav {
         display: block;
@@ -524,7 +549,7 @@ footer {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em tablets */
     }
     form .input-box input {
-        width: 49%;
+        width:49%;
     }
 }
 
