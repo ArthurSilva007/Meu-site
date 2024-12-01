@@ -468,6 +468,14 @@ footer {
     .nav {
         display: block;
     }
+    /* Ajustando o menu para telas pequenas, onde ele será ocultado até ser ativado */
+    .nav-responsive {
+        display: none; /* O menu de navegação começa oculto */
+        font-size: 1rem; /* Tamanho de fonte do menu */
+    }
+    .nav-responsive.active {
+        display: block; /* Exibe o menu quando a classe "active" é adicionada */
+    }
     .nav-responsive, .nav-responsive a {
         display: none;
     }
