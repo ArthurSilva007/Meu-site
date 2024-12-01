@@ -1,20 +1,19 @@
 const menuHamburguer = document.querySelector('.menu-hamburguer');
-menuHamburguer.addEventListener('click', toggleMenu);
+const nav = document.querySelector('.nav-responsive'); // Seleciona o menu de navegação
 
-/*************  ✨ Codeium Command 🌟  *************/
+// Adiciona o evento de clique no menu hamburguer
+menuHamburguer.addEventListener('click', () => {
+    toggleMenu(); // Chama a função para alternar o menu
+});
+
 /**
- * Toggle the menu hamburger to a X and vice versa.
+ * Alterna a visibilidade do menu e transforma o ícone do hambúrguer.
  */
 function toggleMenu() {
-    const nav = document.querySelector('.nav-responsive');
+    // Alterna a classe "change" no hambúrguer (transforma o ícone)
     menuHamburguer.classList.toggle('change');
-
-    // If the menu hamburger is currently a X, show the nav menu.
-    // Otherwise, hide it.
-    if (menuHamburguer.classList.contains('change')) {
-        nav.style.display = 'block';
-    } else {
-        nav.style.display = 'none';
-    }
+    
+    // Alterna a classe "active" no menu de navegação (exibe/oculta o menu)
+    nav.classList.toggle('active'); // Mostra ou oculta o menu
 }
 /******  49de083e-0356-4ac6-a8c9-851d8b2f28b3  *******/
