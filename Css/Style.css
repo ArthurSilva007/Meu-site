@@ -361,22 +361,7 @@ footer {
 /* === menu hamburguer ===*/
 
 
-/* Menu responsivo, inicial oculto */
-.nav-responsive {
-    display: none; /* O menu começa oculto */
-    font-size: 1.2rem;
-    flex-direction: column; /* Para que os links fiquem empilhados */
-    position: absolute; /* Para que ele apareça sobre o conteúdo */
-    top: 0; left: 0;
-    width: 100%; /* O menu deve ocupar toda a largura */
-    background-color: #fff; /* Cor do fundo do menu */
-    padding: 2rem 0; /* Espaçamento do menu */
-}
 
-/* Quando o menu estiver ativo, ele fica visível */
-.nav-responsive.active {
-    display: flex; /* Exibe o menu quando a classe 'active' for adicionada */
-}
 
 
 /* === button === */
