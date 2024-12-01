@@ -422,6 +422,17 @@ footer {
     .Services-box {
         width: 100%;
     }
+
+    /* Garantir que o grid da seção "Our Services" seja responsivo em telas pequenas */
+    .Services-container {
+        flex-direction: column; /* Coluna em dispositivos pequenos */
+        gap: var(--spacing-small);
+    }
+
+    .Portfolio-container {
+        display: block; /* Ajustar o grid para um layout de bloco em celulares */
+        width: 100%;
+    }
 }
 
 /* === Small (sm): Smartphone (landscape) === */
@@ -432,6 +443,13 @@ footer {
     }
     .Services-box {
         width: 70%;
+    }
+
+    /* Ajustando o grid para funcionar em dispositivos maiores que 576px */
+    .Portfolio-container {
+        display: grid; /* Ativar grid */
+        grid-template-columns: 1fr 1fr; /* Duas colunas em telas maiores que 576px */
+        gap: var(--spacing-small);
     }
 }
 
@@ -461,7 +479,7 @@ footer {
         margin-bottom: var(--spacing-small);
     }
     .Portfolio-container {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas em tablets */
     }
     form .input-box input {
         width: 49%;
@@ -488,7 +506,7 @@ footer {
         font-size: var(--font-size-large);
     }
     .Portfolio-container {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, auto); /* Três colunas em desktops */
     }
 }
 /* === Media Queries === */
