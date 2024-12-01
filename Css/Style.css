@@ -389,6 +389,41 @@ footer {
 
 /* === button === */
 
+
+
+
+
+/* Menu responsivo, inicial oculto */
+.nav-responsive {
+    display: none; /* O menu começa oculto */
+    font-size: 1.2rem;
+    flex-direction: column; /* Para que os links fiquem empilhados */
+    position: fixed; /* Fixa o menu sobre o conteúdo */
+    top: 0; left: 0;
+    width: 100%; /* O menu ocupa toda a largura */
+    height: 100%; /* O menu ocupa toda a altura */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro, quase preto, para dar destaque */
+    color: #fff; /* Cor do texto do menu */
+    padding: 2rem; /* Espaçamento interno */
+    transition: transform 0.3s ease-in-out; /* Transição suave */
+    transform: translateX(-100%); /* Inicialmente fora da tela */
+}
+
+/* Quando o menu estiver ativo, ele fica visível */
+.nav-responsive.active {
+    display: flex; /* Exibe o menu quando a classe 'active' for adicionada */
+    transform: translateX(0); /* Move o menu para dentro da tela */
+}
+
+/* Estilo do link do menu */
+.nav-responsive a {
+    text-decoration: none;
+    color: #fff; /* Cor do link */
+    font-size: 2rem; /* Tamanho do texto */
+    margin: 1.5rem 0; /* Espaçamento entre os links */
+    text-align: center;
+}
+
 /* === Media Queries === */
 
 /* Extra "small" (xs): smartphone (Portrait) */
