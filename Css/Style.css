@@ -576,6 +576,12 @@ footer {
         grid-template-columns: repeat(3, auto); /* Três colunas em desktops */
     }
 }
+
+@media (min-width: 768px) {
+    .menu-hamburguer {
+        display: none; /* Esconde o hambúrguer em telas maiores */
+    }
+}
 /* === Media Queries === */
 
 /* === Variáveis globais === */
