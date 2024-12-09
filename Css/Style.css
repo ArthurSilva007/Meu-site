@@ -624,7 +624,7 @@ header h1 {
     color: var(--bg-color-01);
     font-weight: 600;
     letter-spacing: 0.1rem;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     margin: 1.2rem;
     border: none;
     cursor: pointer;
@@ -642,7 +642,7 @@ header h1 {
   
   .tab-content.active {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 2fr));
     gap: 20px;
     padding: 20px;
     text-align: center;
