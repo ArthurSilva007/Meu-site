@@ -597,3 +597,96 @@ footer {
     --font-size-medium: 2rem;
     --font-size-large: 2.7rem;
 }
+
+
+/* === habilidades ===*/
+
+/* Cabeçalho */
+header h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Navegação de abas */
+  
+ 
+ .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+ .tab-button {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    color: var(--bg-color-01);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.5s ease;
+    margin: 1.2rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .tab-button.active {
+    box-shadow: 0 0 0.3rem var(--main-color);
+    background-color: inherit;
+    color: var(--main-color);
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--bg-color-01);
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px var(--color-00);
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+    background: var(--bg-color-02);
+  }
+  
+  .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+  }
+  
+  .icon img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  p {
+    margin: 0;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;    /* Alinha verticalmente */
+    height: 25vh;          /* Preenche a altura total da viewport */
+  } 
