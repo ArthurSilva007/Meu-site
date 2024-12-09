@@ -51,7 +51,6 @@ header {
     align-items: center;
     z-index: 100;
 
-   /* border: solid 1px var(--color-02);*/
 }
 
 .logo {
@@ -168,7 +167,7 @@ span {
    flex-direction: column;
    justify-content: space-between;
    min-height: 25rem; 
-   margin-bottom: 1rem;
+   margin-bottom: 5rem;
 }
 
 .Services-container .Services-box:hover {
