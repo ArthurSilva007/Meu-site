@@ -580,6 +580,9 @@ footer {
     .menu-hamburguer {
         display: none; /* Esconde o hambúrguer em telas maiores */
     }
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
 }
 /* === Media Queries === */
 
@@ -602,8 +605,9 @@ footer {
 
 /* Cabeçalho */
 header h1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
+
   
   /* Navegação de abas */
   
@@ -655,10 +659,11 @@ header h1 {
     gap: 10px;
     background: var(--bg-color-01);
     border: 2px solid var(--main-color);
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 6px var(--color-00);
+    border-radius: 80px;
+    padding: 35px 40px;
+    box-shadow: 0 5px 6px var(--color-00);
     transition: transform 0.3s, background 0.3s;
+    height: 400px; 
   }
   
   .skill-card:hover {
@@ -667,14 +672,14 @@ header h1 {
   }
   
   .icon {
-    font-size: 40px;
+    font-size: 60px;
     margin-bottom: 10px;
     color: var(--main-color);
   }
   
   .icon img {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 65px;
   }
   
   p {
@@ -682,10 +687,16 @@ header h1 {
     font-weight: bold;
     color: var(--text-color);
   }
+  .container {
+    gap: 10px 20px
+  }
   
   .container {
-    display: flex;
-    justify-content: center; /* Alinha horizontalmente */
-    align-items: center;    /* Alinha verticalmente */
-    height: 25vh;          /* Preenche a altura total da viewport */
-  } 
+    display: grid; /* Ativa o grid */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colunas menores e mais responsivas */
+    gap: 10px; /* Espaçamento entre os itens */
+    justify-items: center; /* Alinha os itens ao centro horizontalmente */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    padding: 10px; /* Adiciona um espaçamento interno */
+  }
+
