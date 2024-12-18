@@ -202,7 +202,6 @@ span {
     gap: 1.1rem;
 }
 
-
 .Portfolio-box {
     position: relative;
     border-radius: 0.6rem;
@@ -243,10 +242,12 @@ span {
 
 .Portfolio-layer h4 {
     font-size: 1.8rem;
+    color: black;
 }
 
 .Portfolio-layer p {
     margin: 0.2rem 0 0.5rem;
+    color: black;
 }
 
 .Portfolio-layer a {
