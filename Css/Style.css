@@ -610,94 +610,91 @@ header h1 {
   }
 
   
-  /* Navegação de abas */
+ /* Navegação de abas */
   
  
  .tabs {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+     margin-bottom: 20px;
+ }
+ 
  .tab-button {
-    display: inline-block;
-    padding: 0.7rem 1.8rem;
-    background-color: var(--main-color);
-    border-radius: 2rem;
-    color: var(--bg-color-01);
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    transition: 0.3s ease;
-    margin: 1.2rem;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .tab-button.active {
-    box-shadow: 0 0 0.3rem var(--main-color);
-    background-color: inherit;
-    color: var(--main-color);
-  }
-  
-  .tab-content {
-    display: none;
-  }
-  
-  .tab-content.active {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 2fr));
-    gap: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .skill-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background: var(--bg-color-01);
-    border: 2px solid var(--main-color);
-    border-radius: 80px;
-    padding: 35px 40px;
-    box-shadow: 0 5px 6px var(--color-00);
-    transition: transform 0.3s, background 0.3s;
-    height: 400px; 
-  }
-  
-  .skill-card:hover {
-    transform: translateY(-5px);
-    background: var(--bg-color-02);
-  }
-  
-  .icon {
-    font-size: 60px;
-    margin-bottom: 10px;
-    color: var(--main-color);
-  }
-  
-  .icon img {
-    width: 75px;
-    height: 65px;
-  }
-  
-  p {
-    margin: 0;
-    font-weight: bold;
-    color: var(--text-color);
-  }
-  .container {
-    gap: 10px 20px
-  }
-  
-  .container {
-    display: grid; /* Ativa o grid */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colunas menores e mais responsivas */
-    gap: 10px; /* Espaçamento entre os itens */
-    justify-items: center; /* Alinha os itens ao centro horizontalmente */
-    align-items: center; /* Alinha os itens ao centro verticalmente */
-    padding: 10px; /* Adiciona um espaçamento interno */
-  }
-
+     display: inline-block;
+     padding: 0.7rem 1.8rem;
+     background-color: var(--main-color);
+     border-radius: 2rem;
+     color: var(--bg-color-01);
+     font-weight: 600;
+     letter-spacing: 0.1rem;
+     transition: 0.3s ease;
+     margin: 1.2rem;
+     border: none;
+     cursor: pointer;
+ }
+ 
+ .tab-button.active {
+     box-shadow: 0 0 0.3rem var(--main-color);
+     background-color: inherit;
+     color: var(--main-color);
+ }
+ 
+ .tab-content {
+     display: none;
+ }
+ 
+ .tab-content.active {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(270px, 2fr));
+     gap: 20px;
+     padding: 20px;
+     text-align: center;
+ }
+ 
+ .skill-card {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     background: var(--bg-color-01);
+     border: 2px solid var(--main-color);
+     border-radius: 80px;
+     padding: 35px 40px;
+     box-shadow: 0 5px 6px var(--color-00);
+     transition: transform 0.3s, background 0.3s;
+     height: 400px; 
+     grid-template-columns: 3, 1fr;
+ }
+ 
+ .skill-card:hover {
+     transform: translateY(-5px);
+     background: var(--bg-color-02);
+ }
+ 
+ .icon {
+     font-size: 60px;
+     margin-bottom: 10px;
+     color: var(--main-color);
+ }
+ 
+ .icon img {
+     width: 75px;
+     height: 65px;
+ }
+ 
+ p {
+     margin: 0;
+     font-weight: bold;
+     color: var(--text-color);
+ }
+ 
+ .container {
+     display: grid; /* Ativa o grid */
+     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colunas menores e mais responsivas */
+     gap: 10px; /* Espaçamento entre os itens */
+     justify-items: center; /* Alinha os itens ao centro horizontalmente */
+     align-items: center; /* Alinha os itens ao centro verticalmente */
+     padding: 10px; /* Adiciona um espaçamento interno */
+ }
