@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.classList.add('active');
         const tab = button.getAttribute('data-tab');
         document.getElementById(tab).classList.add('active');
+
       });
     });
-  });
+});

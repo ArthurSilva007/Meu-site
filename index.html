@@ -9,6 +9,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Custom css -->
     <link rel="stylesheet" href="Css/Style.css">
+    <!-- Automatização Download -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
 </head>
 <body>
@@ -66,7 +68,7 @@
                </div>
           
                <div>
-                   <a href="#" class="btn">Download CV</a>
+                   <a href="curriculo.pdf" class="btn">Download CV</a>
                </div>
            </div>
 
@@ -411,5 +413,13 @@ I am well-versed in using <span>Git and GitHub, which streamline</span> project 
 <!-- /Footer section -->
 
     </body>
-    <script src="js/Script.js"></script>
+    <script src="js/Script.js">
+
+      document.getElementById('downloadCV').addEventListener('click', function(event) {
+        event.preventDefault(); // Impede o link de redirecionar
+        const elemento = document.getElementById('curriculo');
+
+        html2pdf().from(elemento).save('curriculo.pdf');
+      });
+    </script>
 </html>
